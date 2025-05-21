@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide In from Right</title>
+  <style>
+    body {
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .slide-in-right {
+      display: inline-block;
+      font-size: 3rem;
+      font-weight: bold;
+      color: #333;
+      opacity: 0;
+      transform: translateX(100%);
+      animation: slideFromRight 2s ease-out forwards;
+    }
+
+    @keyframes slideFromRight {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slide-in-right">Welcome</div>
+
+</body>
+</html>
